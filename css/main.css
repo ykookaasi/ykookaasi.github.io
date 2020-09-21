@@ -10,10 +10,62 @@ a {
   color: #f00;
 }
 
+h2 ~ p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: center;
+}
+
+/* HEADER STYLES */
+.header-nav {
+  float: right;
+  padding: 5.5vh 60px 0 0;
+}
+.header-nav a:hover,
+.header-nav a:active {
+  color: #ed6e2f;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left:  1em;
+}
+.header-nav > li + li {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 1em;
+}
+
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: #000;
+}
+.header-nav > li:last-child a {
+  color: #32a87f;
+}
+
+.header-nav a {
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header-logo:hover,
+.header-logo:active {
+  opacity: 0.5;
+}
+
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
+}
+
+.full-hero:hover {
+  background-color: rgb(111, 161, 247, 0.5);
 }
 
 /* SOCIAL STYLES */
@@ -34,6 +86,12 @@ a {
   vertical-align: middle;
   width: 2.5em;
 }
+
+.social-link:hover,
+.social-link:active {
+  background-color: rgba(150, 150, 255, 0.5);
+}
+
 .social-list {
   list-style: none;
   padding: 0;
