@@ -104,6 +104,10 @@ h2 ~ p {
   color: #ccc;
 }
 
+.footer-social {
+  margin-top: 1em;
+}
+
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
